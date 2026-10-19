@@ -1,0 +1,30 @@
+== cleaning ==
+  PASS: removes duplicate customer_ids
+  PASS: no missing values remain
+  PASS: normalizes inconsistent contract_type casing
+  PASS: total_charges coerced to numeric
+  PASS: cleaning report tracks removed duplicates
+== outlier capping ==
+  PASS: caps extreme outlier
+  PASS: preserves normal values
+== type coercion ==
+  PASS: parses valid numeric strings
+  PASS: blank string becomes NaN
+  PASS: invalid string becomes NaN (not a crash)
+== feature engineering ==
+  PASS: adds avg_monthly_spend
+  PASS: adds tenure_bucket
+  PASS: adds high_support_contact flag
+  PASS: avg_monthly_spend has no inf/nan (tenure=0 handled)
+  PASS: target is binary 0/1
+  PASS: customer_id excluded from features
+  PASS: categoricals one-hot encoded (no object dtype columns)
+== modeling ==
+  PASS: train/test split proportions correct
+  PASS: baseline model produces valid accuracy
+  PASS: baseline beats random guessing on ROC-AUC
+  PASS: random forest produces valid accuracy
+  PASS: random forest beats random guessing on ROC-AUC
+  PASS: random forest learned real signal (tenure_months should be a top feature)
+
+23 passed, 0 failed

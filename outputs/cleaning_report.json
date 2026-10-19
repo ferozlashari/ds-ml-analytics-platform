@@ -1,0 +1,14 @@
+{
+  "rows_before": 2030,
+  "duplicates_removed": 30,
+  "missing_values_imputed": {
+    "age": 100,
+    "total_charges": 20,
+    "payment_method": 60
+  },
+  "outliers_capped": {
+    "monthly_charges": 10,
+    "total_charges": 15
+  },
+  "rows_after": 2000
+}

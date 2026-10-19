@@ -1,0 +1,31 @@
+{
+  "baseline_logistic_regression": {
+    "accuracy": 0.6825,
+    "precision": 0.6648,
+    "recall": 0.6398,
+    "f1_score": 0.6521,
+    "roc_auc": 0.744
+  },
+  "random_forest": {
+    "accuracy": 0.6675,
+    "precision": 0.6318,
+    "recall": 0.6828,
+    "f1_score": 0.6563,
+    "roc_auc": 0.7278
+  },
+  "best_model": "random_forest",
+  "top_features": {
+    "tenure_months": 0.16410844571189184,
+    "total_charges": 0.15280283062095423,
+    "is_month_to_month": 0.13981234337006967,
+    "avg_monthly_spend": 0.10461214848736429,
+    "monthly_charges": 0.10203763443675302,
+    "age": 0.08838295524660443,
+    "support_calls": 0.06144543352193049,
+    "contract_type_One year": 0.04051784386756371,
+    "tenure_bucket_49-72mo": 0.03613871986762933,
+    "contract_type_Two year": 0.030402339988656334
+  },
+  "train_size": 1600,
+  "test_size": 400
+}
